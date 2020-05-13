@@ -12,11 +12,12 @@ Clone the repository into a folder
 ```
 git clone https://github.com/LewisLarsen/docker-compose-spigotmc.git .
 ```
-Once that has done, the only thing left is to build the container.
-Build the container to start the server
+Once that has done, the only thing left is to build the container so the server will start.
 ```
 docker-compose up --d --build
 ```
+
+Open Minecraft and connect,  it should work!
 
 ## Credits & Additional Information
 Thank you to [iztg](https://github.com/itzg/docker-minecraft-server) for his image and helpful documentation. For additional reference and advice please see his repository. This is the bare minimum in order to get a Spigot Server working. 
