@@ -13,7 +13,6 @@ Clone the repository into a folder
 git clone https://github.com/LewisLarsen/docker-compose-spigotmc.git .
 ```
 Once that has done, the only thing left is to build the container.
-```
 Build the container to start the server
 ```
 docker-compose up --d --build
