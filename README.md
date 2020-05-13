@@ -6,7 +6,7 @@ A simple docker-compose repository to get a Spigot Minecraft Server up and runni
 To get started, make sure you have [Docker installed](https://docs.docker.com/docker-for-mac/install/) on your system, and then clone this repository.
 
 ## How to use this
-Either for when I inadvertently forget or if someone stumbles upon this.
+A short tutorial on how to use this docker-compose file.
 
 Clone the repository into a folder
 ```
