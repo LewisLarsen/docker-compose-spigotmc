@@ -1,0 +1,27 @@
+version: '3.7'
+
+networks:
+  minecraft:
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: spigot_minecraft
+    environment:
+      EULA: "TRUE"
+      #ENABLE_RCON: "true"
+      #RCON_PASSWORD: "password"
+      #RCON_PORT: 28016
+      #ENABLE_QUERY: "true" # exposes information about players etc.
+      SERVER_NAME: "Docker Spigot Server"
+      MOTD: "A Spigot Minecraft Server Running in Docker."
+      TYPE: "spigot"
+      OPS: "UFPInfinity"
+    restart: always  
+    ports:
+      - "25565:25565" # Minecraft Connection Port
+     #- "28016:28016" # Rcon
+    volumes:
+      - ./src:/data
+    networks:
+      - minecraft
